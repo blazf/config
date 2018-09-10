@@ -50,7 +50,8 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (leuven)))
- '(load-home-init-file t t))
+ '(load-home-init-file t t)
+ '(package-selected-packages (quote (typescript-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -66,6 +67,8 @@
 ;; associate files with correct modes
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode)) ;; treat .h as C++ no C
 (add-to-list 'auto-mode-alist '("\\.ejs\\'" . html-mode)) ;; treat .ejs as HTML
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . js-jsx-mode)) ;; treat .jsx as JSX
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode)) ;; treat .ts as typescript
 
 ;; trun off wordwrap
 (setq-default truncate-lines t)
