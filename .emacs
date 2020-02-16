@@ -67,6 +67,8 @@
 ;; associate files with correct modes
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode)) ;; treat .h as C++ no C
 (add-to-list 'auto-mode-alist '("\\.ejs\\'" . html-mode)) ;; treat .ejs as HTML
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . js-jsx-mode)) ;; treat .jsx as JSX
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode)) ;; treat .ts as typescript
 
 ;; trun off wordwrap
 (setq-default truncate-lines t)
